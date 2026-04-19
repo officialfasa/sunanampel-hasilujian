@@ -297,7 +297,6 @@
 
                 <div class="footer-action">
                     <div id="backToSearchBtn" class="btn-back">◀ Kembali ke pencarian hasil</div>
-                    <button id="printPageBtn" class="btn-print">🖨️ Cetak / Simpan PDF</button>
                 </div>
                 <div style="text-align: center; margin-top: 1.5rem; font-size: 0.7rem; color: #7f9e8c;">
                     © MTSSA 2026 – Pengumuman resmi kelulusan | Data nilai dan ranking berdasarkan prestasi akademik.
@@ -618,16 +617,6 @@ const databaseSiswa = [
                     tglLahirInput.value = '';
                 });
             }
-
-            // Tombol cetak
-            const printBtn = document.getElementById('printPageBtn');
-            if (printBtn) {
-                printBtn.addEventListener('click', function() {
-                    const originalTitle = document.title;
-                    document.title = "Hasil_UAS_Dwi_DUMMY";
-                    window.print();
-                    document.title = originalTitle;
-                });
             }
             // ========== AGAR TIDAK KEMBALI SENDIRI & REFRESH TETAP DI HASIL ==========
 // Simpan status halaman saat ini
